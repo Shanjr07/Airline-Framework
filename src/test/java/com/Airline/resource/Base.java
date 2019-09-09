@@ -25,7 +25,10 @@ public class Base {
 	public Select formop(WebElement e) {
 		s=new Select(e);
 		return s;
-		
+		}
+	public void click(WebElement ele)
+	{
+		ele.click();
 	}
 	
 

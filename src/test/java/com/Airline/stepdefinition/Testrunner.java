@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.CucumberOptions;
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/Feature",glue="com.Airline.stepdefinition",plugin="html:target")
+@CucumberOptions(features="src/test/resources/Feature",glue="com.Airline.stepdefinition",plugin= {"html:target","rerun:src/test/resources/Feature/failed.txt"},dryRun=false)
 public class Testrunner {
 	
 

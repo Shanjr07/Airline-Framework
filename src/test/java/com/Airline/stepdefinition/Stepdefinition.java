@@ -20,9 +20,24 @@ public class Stepdefinition extends Base{
 	public void user_select_the_from_option_and_return_option() {
 		Bookingpage page1= new Bookingpage();
 		Bookingpage page1op2= new Bookingpage();
-		
+		Bookingpage page1op3= new Bookingpage();
+		Bookingpage page1op4= new Bookingpage();
+		Bookingpage page1op5= new Bookingpage();
+		Bookingpage page1op6= new Bookingpage();
+		Bookingpage page1op7= new Bookingpage();
+		Bookingpage page1op8= new Bookingpage();
+		Bookingpage page1op9= new Bookingpage();
+
 		formop(page1.getFrom()).selectByIndex(1);
 		formop(page1op2.getGetdest()).selectByIndex(1);
+		formop(page1op3.getMon()).selectByIndex(1);
+		formop(page1op4.getDay()).selectByIndex(1);
+		formop(page1op5.getMonth()).selectByIndex(1);
+		formop(page1op6.getDDAy()).selectByIndex(1);
+        click(page1.getOneway());	
+		formop(page1op8.getOneway()).selectByIndex(1);
+		formop(page1op9.getAdcount()).selectByIndex(1);
+        click(page1.getButton());
 		
 		
 
@@ -30,7 +45,7 @@ public class Stepdefinition extends Base{
 
 	@Then("close the browser")
 	public void close_the_browser() {
-	driv.quit();    
+	//driv.quit();    
 	}
 
 
