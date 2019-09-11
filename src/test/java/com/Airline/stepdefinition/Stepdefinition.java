@@ -11,7 +11,7 @@ import cucumber.api.java.en.When;
 
 public class Stepdefinition extends Base{
 	@Given("user launch the browser")
-	public void user_launch_the_browser() throws AWTException {
+	public void user_launch_the_browser() throws AWTException, InterruptedException {
 		openbrowser();
 	   
 	}
@@ -24,8 +24,8 @@ public class Stepdefinition extends Base{
 		Bookingpage page1op4= new Bookingpage();
 		Bookingpage page1op5= new Bookingpage();
 		Bookingpage page1op6= new Bookingpage();
-		Bookingpage page1op7= new Bookingpage();
-		Bookingpage page1op8= new Bookingpage();
+		//Bookingpage page1op7= new Bookingpage();
+		//Bookingpage page1op8= new Bookingpage();
 		Bookingpage page1op9= new Bookingpage();
 
 		formop(page1.getFrom()).selectByIndex(1);
@@ -34,10 +34,11 @@ public class Stepdefinition extends Base{
 		formop(page1op4.getDay()).selectByIndex(1);
 		formop(page1op5.getMonth()).selectByIndex(1);
 		formop(page1op6.getDDAy()).selectByIndex(1);
-        click(page1.getOneway());	
-		formop(page1op8.getOneway()).selectByIndex(1);
+        click(page1.getRet());	
+		
 		formop(page1op9.getAdcount()).selectByIndex(1);
         click(page1.getButton());
+        //formop(page1op2.getGetdest());
 		
 		
 

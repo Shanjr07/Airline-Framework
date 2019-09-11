@@ -50,7 +50,7 @@ public class Bookingpage extends Base{
 	 private WebElement month;
 	 @FindBy(xpath="//select[@id='ddlRetDay']")
 	 private WebElement DDAy;
-	 @FindBy(xpath="//label[text()='Return']")
+	 @FindBy(xpath="//input[@id='rbReturn']")
 	 private WebElement ret;
 	 @FindBy(xpath="//label[text()='One way']")
 	 private WebElement oneway;

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="23.268882">
+<testcase classname="Booking flight" name="Searching th flights" time="23.268882">
+<system-out><![CDATA[Given user launch the browser...............................................passed
+When user select the from option and return option..........................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

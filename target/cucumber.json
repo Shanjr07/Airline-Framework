@@ -1,0 +1,98 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5283400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.first()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Searching th flights",
+        "description": "",
+        "id": "booking-flight;searching-th-flights",
+        "after": [
+          {
+            "result": {
+              "duration": 665900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.addscren(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16308266400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user launch the browser",
+            "match": {
+              "location": "Stepdefinition.user_launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7006163700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user select the from option and return option",
+            "match": {
+              "location": "Stepdefinition.user_select_the_from_option_and_return_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 156200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "close the browser",
+            "match": {
+              "location": "Stepdefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Booking flight",
+    "description": "  I want to use this template for my feature file",
+    "id": "booking-flight",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/Bookingpage.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
